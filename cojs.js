@@ -12,7 +12,13 @@ var Rq = function(url,cb) {
         host: 'cojs.tk',
         port: 80,
         path: '/cogs/user/detail.php?uid=963',
-        method: 'GET'
+        method: 'GET',
+
+        Headers:{
+            
+        
+        }
+
     };
 
     this.chunk = [];
