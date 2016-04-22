@@ -1,0 +1,2045 @@
+BODY: 
+
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<!--<meta name="author" content="CmYkRgB123, BYVoid; 王者自由, Kingfree" />
+<meta name="description" content="CmYkRgB123 Online Grading System，简称 COGS ，又称 COJS。是一款 OI 在线评测系统，基于 LAMP 技术，文件输入输出，支持评测插件和提交答案。" />
+<meta name="keywords" content="COGS, COJS, OJ, OI, NOI, ACM/ICPC" />
+<meta name="generator" content="Vim" />
+<meta name="revised" content="2.8.2.1" />
+<meta name="others" content="" />-->
+
+<link rel="Shortcut Icon" href="../style/cogs.png" />
+<link rel=stylesheet type="text/css" href="/Bootstrap/css/bootstrap.min.css" />
+<link rel=stylesheet href="../style/cogs.css" />
+<style type='text/css'>body {background-image: url(../images/background/0.png);}</style>
+<script class="javascript" src="../include/tradsimp.js"></script><script type="text/javascript" src="/jQuery/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" s
+BODY: rc="../include/sortTable.js"></script>
+<script type="text/javascript" src="/Bootstrap/js/bootstrap.min.js"></script>
+<!--[if IE 6]>
+<link href="/Bootstrap-IE6/ie6.min.css" type="text/css" rel="stylesheet">
+<![endif]-->
+<title>TA - COGS</title>
+</head>
+<body>
+<div id="alltext">
+<div id='nav' class='navbar '>
+<div class='navbar-inner'>
+<div class='container-fluid'>
+<a href='../index.php' class='brand'>COGS</a>
+<a class='btn btn-navbar' data-toggle='collapse' data-target='.nav-collapse'><span class='icon-bar'></span><span class='icon-bar'></span><span class='icon-bar'></span></a>
+<div class='nav-collapse'>
+<ul class='nav'>
+<li class='dropdown'>
+<a id='fenleibar' href='#' class='dropdown-toggle' data-toggle='dropdown'><b class='caret'></b></a>
+<ul class='dropdown-menu span11' id='catebar'>
+<li style='width: 100px'><a href='../problem/index.php?caid=409' title='背包最基本的一类，练手用~~'>0/1背包</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=207' title='利用对称性求解2-SAT问题'>2-SAT</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=181' title=''>ACM/ICPC</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=115' title='亚洲-太平洋&nbsp;OI'>APIO</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=413' title='基础中的基础'>BASE</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=267' title=''>byvoid</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=101' title='有向无环图'>DAG</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=251' title=''>DFS序</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=276' title=''>dinic</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=418' title=''>dos</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=151' title='快速傅立叶变换'>FFT</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=19' title='河南省选'>HAOI</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=407' title=''>Hopcroft-karps算法</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=231' title=''>HZOI</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=24' title='国际信息学奥林匹克竞赛'>IOI</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=399' title=''>K-Dtree</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=222' title='一种分割k维数据空间的数据结构'>K-D树</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=335' title=''>kmp</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=311' title='用a*算法，求解第k短的路径'>k短路</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=156' title='最近公共祖先'>LCA</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=15' title='全国信息学奥林匹克竞赛'>NOI</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=35' title='全国青少年信息学奥林匹克联赛&nbsp;全国青少年信息学奥林匹克联赛'>NOIP</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=361' title='http://noi.openjudge.cn/'>NOI题库</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=7' title='非确定性多项式时间复杂度问题'>NP 问题</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=240' title='非确定性多项式时间复杂度问题'>NP问题</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=76' title='Pku&nbsp;Online&nbsp;Judge&nbsp;(ACM)'>POJ</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=396' title='色情，暴力，少儿不良'>R18</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=77' title='ST算法&nbsp;&nbsp;Range&nbsp;Minimum/Maximum&nbsp;Query，可以用线段树或者ST算法解决。'>RMQ</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=417' title=''>s t表</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=257' title='博弈论的工具'>SG函数</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=87' title='C++&nbsp;STL&nbsp;标准模板库&nbsp;照着模板打一个就能A~(≧▽≦)/~啦啦啦'>STL</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=34' title='USA&nbsp;Computing&nbsp;Olympiad&nbsp;美国计算机竞赛'>USACO</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=152' title='UVa,&lt;算法竞赛入门&gt;&nbsp;入门'>UVa</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=370' title=''>一维数组</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=414' title=''>三分</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=124' title='函数式线段树&nbsp;系统函数及数学库函数的熟练使用'>主席树</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=13' title='二分图&nbsp;二分再二分&nbsp;二分&nbsp;二分正解'>二分图</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=126' title='二分参数'>二分法</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=269' title=''>二维线段树</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=213' title='任意一条边都属于且仅属于一个环的有向强连通图，和任意一条边都至多属于一个环的无向连通图被称为仙人掌图'>仙人掌图</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=132' title='~&nbsp;非运算
+&gt;&gt;&nbsp;右移位运算
+&lt;&lt;&nbsp;左移位运算
+&amp;&nbsp;与运算
+^&nbsp;异或运算
+|&nbsp;或运算&nbsp;卡常大法好w~'>位运算</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=108' title='倍增算法&nbsp;倍增&nbsp;恩&nbsp;很经典的倍增思想'>倍增</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=271' title='动态规划的一种优化方法。'>决策单调性优化</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=224' title='分块之后，随便搞。'>分块</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=268' title='把原图复制分层来解决一些不同寻常的最短路问题。详见集训队2004《肖天——分层图思想及其在信息学竞赛中的应用》'>分层图</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=29' title='二分查找&nbsp;二分&nbsp;分治&nbsp;二分答案&nbsp;二分合理答案&nbsp;二分答案之后贪心'>分治</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=118' title='可在O(logn)的时间复杂度内求出区间第k大值的一种数据结构&nbsp;采用定义数据结构的方法来完成题目。&nbsp;利用自己定义的数据结构来储存数据'>划分树</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=244' title=''>前缀和</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=415' title=''>前缀和优化</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=250' title='不剪你就wa到黑吧'>剪枝</a></li>
+
+BODY: <li style='width: 100px'><a href='../problem/index.php?caid=364' title=''>动态图</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=422' title=''>动态开点</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=117' title='包含对树的分割与合并，对每个点到根路径和子树操作/查询的一类问题'>动态树</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=16' title='通过把原问题分解为相对简单的子问题的方式求解复杂问题，适用于有重叠子问题和最优子结构性质的问题&nbsp;01背包'>动态规划</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=226' title=''>匈牙利算法</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=215' title=''>区域动规</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=225' title='求若干个半平面的交集。常用分治法或朱泽园提出的排序增量法（二者复杂度均为O(NlogN)）解决。'>半平面交</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=139' title=''>单纯形</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=412' title=''>单调数列</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=406' title=''>单调栈</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=121' title='通过维护一个内部元素保持单调性的队列用均摊O(1)的时间复杂度求出满足一定条件的区间最值&nbsp;需要单调队列维护优化'>单调队列</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=5' title='研究公式化了的激励结构（游戏或者博弈）间的相互作用'>博弈论</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=210' title=''>卡精度</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=419' title=''>压位</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=342' title=''>双向动归</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=122' title='利用dfs求双连通分量'>双连通分量</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=233' title='可持久化数据结构'>可持久化</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=211' title=''>合并类动态规划</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=218' title=''>后缀数组</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=362' title=''>后缀树</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=318' title='后缀自动机'>后缀自动机</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=421' title=''>启发式合并</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=171' title=''>哈夫曼树</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=348' title='使用哈希表可极巧妙的绕开某些问题'>哈希表</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=125' title=''>四分树</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=232' title='回文子串问题，大多可用Manacher算法，后缀数组等字符串算法解决'>回文串</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=275' title='自动机，处理各种回文串问题。'>回文自动机</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=88' title='回溯'>回溯</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=2' title='图论&nbsp;构图&nbsp;建图&nbsp;图'>图论</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=11' title='语言的基本知识及练习&nbsp;简单&nbsp;水题&nbsp;水得不能再水的题&nbsp;水水更健康~&nbsp;水的不能再水的题，水水更健康。&nbsp;水啊&nbsp;简单简单！！！&nbsp;水得不能再水&nbsp;水题不解释'>基本</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=236' title=''>基础</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=9' title='二叉堆&nbsp;可并堆&nbsp;大根堆&nbsp;&nbsp;小根堆&nbsp;堆结构&nbsp;heap&nbsp;优先队列&nbsp;&nbsp;Fibonacci堆'>堆</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=319' title=''>多重背包</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=410' title='水到极致的一些题'>大河波浪宽</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=347' title=''>字典序</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=54' title='Retrieval&nbsp;Tree&nbsp;Trie&nbsp;Tree'>字典树</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=30' title='字符串&nbsp;string&nbsp;字符串匹配&nbsp;KMP算法&nbsp;格式输入&nbsp;通过o&nbsp;n+m的效率来查找模式串在目标串中出现的位置和次数'>字符串</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=255' title=''>字符串/字符数组</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=363' title='通过字符串hash解字符串匹配问题'>字符串hash</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=234' title=''>字符串处理</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=288' title='都要用得上。'>字符串排序</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=308' title=''>容斥原理</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=416' title=''>对偶图</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=120' title=''>左偏树</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=154' title='差分序列'>差分序列</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=37' title='最短路径解决差分约束系统问题'>差分约束</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=367' title='一般图的最大匹配'>带花树</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=33' title='平衡树&nbsp;&nbsp;BST&nbsp;SBT&nbsp;Treap&nbsp;AVL&nbsp;Splay&nbsp;红黑树&nbsp;Van&nbsp;Emde&nbsp;Boas&nbsp;B树&nbsp;set，multiset，map，multimap'>平衡树</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=286' title=''>平面图</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=18' title='对不相交集合的合并和查找&nbsp;UFS&nbsp;查查，并'>并查集</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=336' title='在一个图中，每一个长度大于三的环都至少有一条弦，弦是连接环上两个不相邻顶点的一条边。'>弦图</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=119' title=''>强连通分量</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=133' title=''>快速幂</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=310' title='求解各类最大子矩形问题'>悬线法</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=160' title='静态打表&nbsp;多线程变频置换表&nbsp;非稳态表&nbsp;量子纠缠表'>打表</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=357' title='#include&nbsp;&lt;iostream&gt;
+using&nbsp;namespace&nbsp;std;
+
+//扩展欧几里德算法
+int&nbsp;ExGCD(int&nbsp;a,&nbsp;int&nbsp;b,&nbsp;int&amp;&nbsp;x,&nbsp;int&amp;&nbsp;y)
+{
+	if(b&nbsp;==&nbsp;0)
+	{
+		x&nbsp;=&nbsp;1,&nbsp;y&nbsp;=&nbsp;0;
+		return&nbsp;a;
+	}
+	int&nbsp;d&nbsp;=&nbsp;ExGCD(b,&nbsp;a%b,&nbsp;x,&nbsp;y);
+	int&nbsp;temp&nbsp;=&nbsp;x;
+	x&nbsp;=&nbsp;y;
+	y&nbsp;=&nbsp;temp&nbsp;-&nbsp;a/b*y;
+	return&nbsp;d;
+}
+
+int&nbsp;main()
+{
+	int&nbsp;x,&nbsp;y,&nbsp;d;
+	d&nbsp;=&nbsp;ExGCD(99,&nbsp;78,&nbsp;x,&nbsp;y);
+	cout&nbsp;&lt;&lt;&nbsp;d&nbsp;&lt;&lt;&nbsp;&quot;&nbsp;&quot;&nbsp;&lt;&lt;&nbsp;x&nbsp;&lt;&lt;&nbsp;&quot;&nbsp;&quot;&nbsp;&lt;&lt;&nbsp;y&nbsp;&lt;&lt;&nbsp;endl;
+	return&nbsp;0;
+}
+
+//定理一:&nbsp;如果a,b是不都为0的任意整数,则d=gcd(a,b)是a,b的线性组合{ax+by:&nbsp;x,y∈Z}的最小元素.
+//&nbsp;已知d=gcd(a,b)=gcd(b,a&nbsp;mod&nbsp;b)
+//
+//由gcd(b,a&nbsp;mod&nbsp;b)得知,d&nbsp;=&nbsp;bx&nbsp;+&nbsp;a&nbsp;mod&nbsp;b&nbsp;=&nbsp;bx&nbsp;+&nbsp;(a-floor(a/b)*b)*y&nbsp;=&nbsp;a*y&nbsp;+&nbsp;b(x-floor(a/b)*y)
+//当推到gcd(a,b)时,d′&nbsp;=&nbsp;d&nbsp;=&nbsp;a*y&nbsp;+&nbsp;b(x-floor(a/b)*y)
+
+//其他比较重要定理:
+//定理二:d|a,&nbsp;d|b&nbsp;=&gt;&nbsp;d|(ax+by)&nbsp;&nbsp;注:d|a表示a&nbsp;mod&nbsp;b&nbsp;==&nbsp;0,即a能被b整除
+//定理一推论:&nbsp;对任意整数a,b如果d|a,d|b,则d|gcd(a,b)
+
+//附:
+int&nbsp;GCD(int&nbsp;a,&nbsp;int&nbsp;b)
+{
+&nbsp;&nbsp;　　if(b&nbsp;==&nbsp;0)
+		　　return&nbsp;a;
+	　　return&nbsp;GCD(b,&nbsp;a&nbsp;%&nbsp;b);
+}
+//迭代形式:
+int&nbsp;GCD(int&nbsp;a,&nbsp;int&nbsp;b)
+{
+	while(b&nbsp;!=&nbsp;0)
+	{
+		int&nbsp;r&nbsp;=&nbsp;b;
+		b&nbsp;=&nbsp;a&nbsp;%&nbsp;b;
+		a&nbsp;=&nbsp;r;
+	}
+	return&nbsp;a;
+}
+'>扩展欧几里德</a></li>
+
+BODY: <li style='width: 100px'><a href='../problem/index.php?caid=223' title=''>扫描线法</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=209' title=''>找规律</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=36' title='将有向无环图中所有顶点排成一个线性序列，使得图中任意一对顶点u和v，若(u,v)间有一条边，则u在线性序列中出现在v之前。&nbsp;快速排序'>拓扑排序</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=195' title='拟阵是一个满足交换性的子集系统'>拟阵</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=158' title='ANS=C(快速幂结果-1，k-1）'>排列组合</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=47' title='快速排序&nbsp;冒泡排序&nbsp;选择排序&nbsp;桶排序&nbsp;归并排序&nbsp;基数排序&nbsp;系统快排&nbsp;用的排序算法越优，时间会越短。&nbsp;程序好编，完美去重！'>排序</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=203' title=''>排序网络</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=155' title='基于连通性状态压缩的动态规划'>插头DP</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=23' title='BFS&nbsp;广度优先搜索&nbsp;宽度优先搜索&nbsp;广搜&nbsp;宽搜&nbsp;&nbsp;DFS&nbsp;深度优先搜索&nbsp;深搜&nbsp;记忆化搜索&nbsp;搜索+剪枝'>搜索</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=40' title='Hash&nbsp;散列&nbsp;哈希'>散列</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=333' title=''>数位dp</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=164' title='数值方法解函数，数值方法求极值，数值积分，Simpson公式求积分'>数值方法</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=21' title='数学方法&nbsp;组合数学&nbsp;线性代数&nbsp;概率论&nbsp;数学知识&nbsp;质因数分解&nbsp;&nbsp;素数&nbsp;数学相关&nbsp;比较水'>数学</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=46' title='整数性质&nbsp;素数&nbsp;同余&nbsp;RSA加密算法&nbsp;莫比乌斯反演&nbsp;学好数学......'>数论</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=260' title='对所有询问二分最后得到答案'>整体二分</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=56' title='文法分析&nbsp;编译原理&nbsp;BNF'>文法分析</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=130' title='用平面上的点表示决策，并维护决策的凸包以降低DP的时间复杂度'>斜率优化</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=206' title=''>暴力</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=265' title=''>暴搜</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=10' title='最大独立集&nbsp;最小支配集&nbsp;最小路径覆盖&nbsp;最大闭合子图'>最值子图</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=4' title='最小生成树&nbsp;MST&nbsp;Kruskal&nbsp;克鲁斯卡尔&nbsp;Prim&nbsp;普利姆&nbsp;Kruskal'>最小生成树</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=355' title=''>最小表示法</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=3' title='最短路&nbsp;最短路径&nbsp;Dijkstra&nbsp;Bellman-ford&nbsp;Floyd&nbsp;SPFA&nbsp;这个用解释吗？'>最短路</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=360' title='有n^2和nlogn两种算法'>最长上升子序列</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=339' title=''>最长不下降子序列</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=189' title=''>有限状态自动机</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=159' title=''>枚举</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=1' title='FILO&nbsp;FIFO&nbsp;栈&nbsp;队列&nbsp;堆栈&nbsp;stack&nbsp;queue&nbsp;STL的灵活运用&nbsp;map神奇过法不解释'>栈和队列</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=227' title='树的边分治和点分治'>树分治</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=354' title=''>树套树</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=279' title=''>树形DP</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=277' title=''>树形动归</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=241' title=''>树状DP</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=157' title='就这么简单'>树状动规</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=17' title='在一个区间内实现快速查询，修改，删除的高效结构。&nbsp;树状数组的离线应用'>树状数组</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=90' title='树&nbsp;树结构&nbsp;Tree&nbsp;二叉树'>树结构</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=281' title=''>树规</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=176' title='将一棵树划分成若干条链使得每个点属于唯一一条链'>树链剖分</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=205' title='概率与期望'>概率与期望</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=185' title=''>概率分析</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=127' title='在串中寻找子串出现的位置&nbsp;KMP算法&nbsp;AC自动机'>模式匹配</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=45' title='模拟&nbsp;就是模拟&nbsp;耐心吧&nbsp;扫一遍即可&nbsp;模拟&nbsp;贪心&nbsp;入门题&nbsp;模拟算法&nbsp;耐心就一定能过'>模拟</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=242' title=''>模拟退火</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=112' title=''>次短路</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=163' title='筛法求OL函数'>欧拉函数</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=26' title='欧拉路径&nbsp;欧拉回路'>欧拉路径</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=334' title=''>水题</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=235' title='一种解决区间染色问题的奇怪方法&nbsp;其实就是线段切割'>浮水法</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=147' title='测试计算机浮点运算能力&nbsp;Super&nbsp;PI'>浮点运算</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=317' title='要用到滚动数组优化空间&nbsp;防止爆内存的利器'>滚动数组</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=289' title=''>灌水法</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=107' title=''>物理</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=408' title=''>特判</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=332' title=''>特殊判断</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=358' title=''>状压dp</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=114' title='将状态用一个正整数表示'>状态压缩</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=420' title=''>矩形切割</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=204' title=''>矩阵快速幂</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=315' title='求图的生成树数量'>矩阵树定理</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=43' title=''>矩阵运算</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=39' title='离散化'>离散化</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=220' title='Flood&nbsp;Fill是一种图论算法，对于一个图来说，可以很方便的求子图的个数。'>种子填充</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=28' title='Sparse&nbsp;Table&nbsp;稀疏表&nbsp;ST&nbsp;ST算法'>稀疏表</a></li>
+
+BODY: <li style='width: 100px'><a href='../problem/index.php?caid=280' title='红黑树（Red&nbsp;Black&nbsp;Tree）&nbsp;是一种自平衡二叉查找树，是在计算机科学中用到的一种数据结构，典型的用途是实现关联数组。'>红黑树</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=216' title=''>线性动规</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=14' title='线性表&nbsp;链表&nbsp;线形结构'>线性结构</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=131' title=''>线性规划</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=32' title='在一个区间内实现快速查询，修改，删除的高效结构。&nbsp;不解释'>线段树</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=186' title=''>组合数学</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=12' title='最大流&nbsp;最小割&nbsp;NetworkFlow&nbsp;费用流&nbsp;最小费用最大流&nbsp;枚举答案，最大流验证&nbsp;动态加点&nbsp;枚举矩形上下界'>网络流</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=411' title=''>网络流 0/1分数规划</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=150' title='置换群&nbsp;E8李群'>群论</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=136' title='01背包&nbsp;完全背包'>背包问题</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=283' title=''>莫队</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=42' title='表达式计算与表达式树&nbsp;波兰算法&nbsp;波兰表达式&nbsp;逆波兰表达式'>表达式树</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=162' title='高斯消元'>解方程组</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=116' title='统计选择的方案数'>计数</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=31' title='计算几何&nbsp;凸包&nbsp;旋转卡壳'>计算几何</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=161' title='转换状态'>记忆化搜索</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=22' title='从问题的某一个初始解出发逐步逼近给定的目标，以尽可能快的地求得更好的解&nbsp;满足局部最优解是全局最优解的DP&nbsp;可以用数学证明'>贪心</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=284' title=''>辗转相除</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=194' title=''>近似算法</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=8' title='连通块&nbsp;连通度&nbsp;割顶&nbsp;桥&nbsp;块&nbsp;连通图&nbsp;无向图连通分量&nbsp;有向图强连通分量&nbsp;弱连通分量&nbsp;Tarjan&nbsp;利用dfs求出强连通分量来解决问题'>连通性</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=285' title=''>递归</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=20' title='递推&nbsp;总结归纳出递推公式进行求值&nbsp;数值递推'>递推</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=228' title='按时间分治的算法，又称CDQ分治'>陈丹琦分治</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=6' title='利用随机数的稳定概率'>随机化</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=243' title='心态，非完美算法，精彩地骗，简单数学分析+猜测，分类讨论&nbsp;直接输出答案&nbsp;打结果表'>骗分</a></li>
+<li style='width: 100px'><a href='../problem/index.php?caid=27' title='高精度加法&nbsp;高精度减法&nbsp;高精度乘法&nbsp;高精度除法&nbsp;需要用到高精度计算'>高精度</a></li>
+</ul>
+</li>
+<li class=''><a href='../problem/index.php'>题目</a></li>
+<li class=''><a href='../submit/index.php'>记录</a></li>
+<li class=''><a href='../contest/index.php'>比赛</a></li>
+<li class=''><a href='../page/index.php'>页面</a></li>
+<li class='active'><a href='index.php'>用户</a></li>
+<li class=''><a href='../problem/comments.php'>评论</a></li>
+<form class='navbar-search' method='get' action="../problem/index.php" >
+<input name='key' type='text' id='key' class='search-query span2' placeholder='搜索题目' />
+</form>
+</ul>
+<ul class='nav pull-right'>
+<li class=''><a href='../docs/index.php'>帮助</a></li>
+<li class='divider-vertical'></li>
+<li class='dropdown'>
+<a href='#' class='dropdown-toggle' data-toggle='dropdown'>登录<b class='caret'></b></a>
+<ul class='dropdown-menu'>
+<li class='span3'><form method="post" action="dologin.php" class='form-inline center'>
+<input name="from" type="hidden" id="from" value="L2NvZ3MvdXNlci9kZXRhaWwucGhwP3VpZD05NjM=" />
+<input name="username" type="text" class='input-small span2' placeholder='用户名' /><br />
+<input name="password" type="password" class='input-small span2' placeholder='密码' /><br />
+<label class="checkbox">
+<input name="savepwd" type="checkbox" value="1" />保存 Cookies
+</label><br />
+<button class='btn btn-primary'>登录</button>
+</form></li>
+<li class='divider'></li>
+<li class='span2'>
+<a href="register.php"><span class='icon-user'></span>注册</a>
+</li>
+<li class='span2'>
+<a href="lost.php"><span class='icon-eye-open'></span>忘记密码</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="body" class='container-fluid'>
+<div class='row-fluid'>
+<div class='span4'>
+<table class='table table-striped table-condensed table-bordered fiexd'>
+<tr>
+<th style="width: 5em;">用户编号</th>
+<td>963</td>
+</tr>
+<tr>
+<th>用户名称</th>
+<td>TA1111</td>
+</tr>
+<tr>
+<th>用户头像
+<p>&nbsp;</p>
+</th>
+<td><img src="../images/gravatar/1afd348618667d6793fdeb29cc6d127fs200" alt="Gravatar" width="200" height="200" /></td>
+</tr>
+<tr>
+<th>用户昵称</th>
+<td>TA</td>
+</tr>
+<tr>
+<th>E-mail</th>
+<td><a href="mailto:825884882@qq.com" target="_blank">825884882@qq.com</a></td>
+</tr>
+<tr>
+<th>阅读权限</th>
+<td>0</td>
+</tr>
+<tr>
+<th>所属分组</th>
+<td><a href="../user/index.php?gid=1" class='btn btn-mini btn-warning'>注册会员</a></td>
+</tr>
+<tr>
+<th>等级积分</th>
+<td>1848</td>
+</tr>
+<tr>
+<th>注册时间</th>
+<td>2012-10-27 17:39:33</td>
+</tr>
+<tr>
+<th>个人介绍</th>
+<td class='wrap'>在一半的时间里，我不能没有；在一半的时间里，我又觉得无所谓。这不是取决于我心如何，而是取决于我能忍耐多少。</td>
+</tr>
+  </table>
+<table class='table table-striped table-condensed table-bordered fiexd'>
+  <tr>
+    <th>比赛名</th>
+    <th>参加时间</th>
+  </tr>
+    <tr>
+    <td><b>20150408</b></td>
+    <td><a href="../contest/problem.php?ctid=253" target="_blank">2015-04-08</a></td>
+    </tr>
+    <tr>
+    <td><b>搜索题...</b></td>
+    <td><a href="../contest/problem.php?ctid=250" target="_blank">2014-11-04</a></td>
+    </tr>
+    <tr>
+    <td><b>20121107</b></td>
+    <td><a href="../contest/problem.php?ctid=242" target="_blank">2014-09-20</a></td>
+    </tr>
+    <tr>
+    <td><b>20111102</b></td>
+    <td><a href="../contest/problem.php?ctid=222" target="_blank">2013-11-04</a></td>
+    </tr>
+    <tr>
+    <td><b>20111104</b></td>
+    <td><a href="../contest/problem.php?ctid=221" target="_blank">2013-11-02</a></td>
+    </tr>
+</table>
+</div>
+<div class='span8'>
+<a href="../submit/index.php?uid=963" target="_blank">查看全部提交记录</a>
+<table class='table table-striped table-condensed table-bordered fiexd'>
+<tr><td>
+<a href='../submit/code.php?id=46584' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1" target="_blank">
+加法问题</a>
+</td>
+<td>
+<a href='../submit/code.php?id=145117' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=3" target="_blank">
+服务点设置</a>
+</td>
+<td>
+<a href='../submit/code.php?id=148274' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=11" target="_blank">
+运输问题1</a>
+</td>
+<td>
+<a href='../submit/code.php?id=148297' target='_blank'>
++<i class='icon-
+BODY: ok'></i>
+</a>
+<a href="../problem/problem.php?pid=12" target="_blank">
+运输问题2</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=204775' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=14" target="_blank">
+搭配飞行员</a>
+</td>
+<td>
+<a href='../submit/code.php?id=157713' target='_blan
+BODY: k'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=28" target="_blank">
+最大获利</a>
+</td>
+<td>
+<a href='../submit/code.php?id=137821' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=31" target="_blank">
+潜水员的问题</a>
+</td>
+<td>
+<a href='../submit/code.php?id=91950' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=32" target="_blank">
+位图</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=78212' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=36" target="_blank">
+求和问题</a>
+</td>
+<td>
+<a href='../submit/code.php?id=78432' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=37" target="_blank">
+增强的加法问题</a>
+</td>
+<td>
+<a href='../submit/code.php?id=78445' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=38" target="_blank">
+增强的减法问题</a>
+</td>
+<td>
+<a href='../submit/code.php?id=78451' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=39" target="_blank">
+增强的乘法问题</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=92603' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=40" target="_blank">
+回文数</a>
+</td>
+<td>
+<a href='../submit/code.php?id=132726' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?
+BODY: pid=41" target="_blank">
+麦森数</a>
+</td>
+<td>
+<a href='../submit/code.php?id=143041' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=56" target="_blank">
+质数取石子</a>
+</td>
+<td>
+<a href='../submit/code.php?id=156894' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=61" target="_blank">
+打鼹鼠</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=142207' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=62" target="_blank">
+宠物收养所</a>
+</td>
+<td>
+<a href='../submit/code.php?id=124395' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=67" target="_blank">
+生日蛋糕</a>
+</td>
+<td>
+<a href='../submit/code.php?id=108139' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=68" target="_blank">
+采药</a>
+</td>
+<td>
+<a href='../submit/code.php?id=132633' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=69" target="_blank">
+虫食算</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=46919' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=74" target="_blank">
+明明的随机数</a>
+</td>
+<td>
+<a href='../submit/code.php?id=154505' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=76" target="_blank">
+统计数字</a>
+</td>
+<td>
+<a href='../submit/code.php?id=91799' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=77" target="_blank">
+数塔</a>
+</td>
+<td>
+<a href='../submit/code.php?id=91814' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=78" target="_blank">
+过河卒</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=47097' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=88" target="_blank">
+到天宫做客</a>
+</td>
+<td>
+<a href='../submit/code.php?id=50903' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=92" target="_blank">
+一元三次方程求解</a>
+</td>
+<td>
+<a href='../submit/code.php?id=126390' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=93" target="_blank">
+数的划分</a>
+</td>
+<td>
+<a href='../submit/code.php?id=124464' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=98" target="_blank">
+均分纸牌</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=77343' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=108" target="_blank">
+津津的储蓄计划</a>
+</td>
+<td>
+<a href='../submit/code.php?id=77371' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=110" target="_blank">
+谁拿了最多奖学金</a>
+</td>
+<td>
+<a href='../submit/code.php?id=171302' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=115" target="_blank">
+算24点</a>
+</td>
+<td>
+<a href='../submit/code.php?id=78183' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=120" target="_blank">
+Hanoi双塔问题</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=77348' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=126" target="_blank">
+自动统计机</a>
+</td>
+<td>
+<a href='../submit/code.php?id=50545' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=135" target="_blank">
+越野跑</a>
+</td>
+<td>
+<a href='../submit/code.php?id=75852' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=136" target="_blank">
+奶牛式乘法</a>
+</td>
+<td>
+<a href='../submit/code.php?id=75113' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=142" target="_blank">
+iCow播放器</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=75117' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=148" target="_blank">
+书架</a>
+</td>
+<td>
+<a href='../submit/code.php?id=50819' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=154" target="_blank">
+阅读大赛</a>
+</td>
+<td>
+<a href='../submit/code.php?id=77411' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=159" target="_blank">
+完全平方数</a>
+</td>
+<td>
+<a hre
+BODY: f='../submit/code.php?id=74347' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=162" target="_blank">
+焰火表演</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=74766' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=163" target="_blank">
+牛语</a>
+</td>
+<td>
+<a href='../submit/code.php?id=75126' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=183" target="_blank">
+奶牛的骰子</a>
+</td>
+<td>
+<a href='../submit/code.php?id=75008' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=187" target="_blank">
+轮子的旋转</a>
+</td>
+<td>
+<a href='../submit/code.php?id=141622' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=193" target="_blank">
+最多因子数</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=75331' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=218" target="_blank">
+笨小猴</a>
+</td>
+<td>
+<a href='../submit/code.php?id=158675' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=243" target="_blank">
+啤酒厂建造</a>
+</td>
+<td>
+<a href='../submit/code.php?id=153654' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=257" target="_blank">
+动态排名系统</a>
+</td>
+<td>
+<a href='../submit/code.php?id=123923' target='_blank'>
++<i class='icon-ok'></
+BODY: i>
+</a>
+<a href="../problem/problem.php?pid=260" target="_blank">
+银河英雄传说</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=142218' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=263" target="_blank">
+矩形周长</a>
+</td>
+<td>
+<a href='../submit/code.php?id=141130' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=265" target="_blank">
+线段覆盖</a>
+</td>
+<td>
+<a href='../submit/code.php?id=145782' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=284
+BODY: " target="_blank">
+内存分配</a>
+</td>
+<td>
+<a href='../submit/code.php?id=187612' target='_blank'>
++<i class='icon-remove'></i>
+</a>
+<a href="../problem/problem.php?pid=287" target="_blank">
+假面舞会</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=75755' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=292" target="_blank">
+瓷片项链</a>
+</td>
+<td>
+<a href='../submit/code.php?id=124163' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=298" target="_blank">
+食物链</a>
+</td>
+<td>
+<a href='../submit/code.php?id=182904' target='_blank'>
++<i class='icon-remove'></i>
+</a>
+<a href="../problem/problem.php?pid=302" target="_blank">
+硬币购物</a>
+</td>
+<td>
+<a href='../submit/code.php?id=159354' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=305" target="_blank">
+木棍分割</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=157341' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=312" target="_blank">
+上升序列</a>
+</td>
+<td>
+<a href='../submit/code.php?id=146255' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=314" target="_blank">
+郁闷的出纳员</a>
+</td>
+<td>
+<a href='../submit/code.php?id=125677' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=326" target="_blank">
+医院设置</a>
+</td>
+<td>
+<a href='../submit/code.php?id=146572' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=330" target="_blank">
+文本编辑器</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=147054' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=339" target="_blank">
+维护数列</a>
+</td>
+<td>
+<a href='../submit/code.php?id=163857' target='_blank'>
++<i class='icon-remove'></i>
+</a>
+<a href="../problem/problem.php?pid=360" target="_blank">
+双面棋盘</a>
+</td>
+<td>
+<a href='../submit/code.php?id=75760' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=368" target="_blank">
+水仙花数</a>
+</td>
+<td>
+<a href='../submit/code.php?id=75809' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=370" target="_blank">
+数字频率</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=151912' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=371" target="_blank">
+亲和数</a>
+</td>
+<td>
+<a href='../submit/code.php?id=75810' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=379" target="_blank">
+背诵单词</a>
+</td>
+<td>
+<a href='../submit/code.php?id=75861' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=380" target="_blank">
+硬币翻转</a>
+</td>
+<td>
+<a href='../submit/code.php?id=141342' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=383" target="_blank">
+单向双轨道</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=76495' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=389" target="_blank">
+中考分数</a>
+</td>
+<td>
+<a href='../submit/code.php?id=76536' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=393" target="_blank">
+牛棚回声</a>
+</td>
+<td>
+<a href='../submit/code.php?id=76702' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=398" target="_blank">
+股票收益</a>
+</td>
+<td>
+<a href='../submit/code.php?id=77450' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=399" target="_blank">
+查字典</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=134183' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=405" target="_blank">
+Hankson的趣味题</a>
+</td>
+<td>
+<a href='../submit/code.php?id=121767' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=406" target="_blank">
+最优贸易</a>
+</td>
+<td>
+<a href='../submit/code.php?id=155820' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=419" target="_blank">
+区域发展</a>
+</td>
+<td>
+<a href='../submit/code.php?id=142036' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=421" target="_blank">
+HH的项链</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=146634' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=432" target="_blank">
+中奖的机率</a>
+</td>
+<td>
+<a href='../submit/code.php?id=76864' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=437" target="_blank">
+删掉的边</a>
+</td>
+<td>
+<a href='../submit/code.php?id=76884' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=448" target="_blank">
+神牛果</a>
+</td>
+<td>
+<a href='../submit/code.php?id=126300' target='_blank'>
++<i class='icon-remove'></i>
+</a>
+<a href="../problem/problem.php?pid=452" target="_blank">
+Nim游戏！</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=124640' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=457" target="_blank">
+最优布线问题</a>
+</td>
+<td>
+
+BODY: <a href='../submit/code.php?id=164144' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=461" target="_blank">
+餐巾</a>
+</td>
+<td>
+<a href='../submit/code.php?id=77251' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=463" target="_blank">
+乒乓球</a>
+</td>
+<td>
+<a href='../submit/code.php?id=146479' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=468" target="_blank">
+超级钢琴</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=91448' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=478" target="_blank">
+罪犯问题A</a>
+</td>
+<td>
+<a href='../submit/code.php?id=77579' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=482" target="_blank">
+NBA总冠军</a>
+</td>
+<td>
+<a href='../submit/code.php?id=77333' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=483" target="_blank">
+买票</a>
+</td>
+<td>
+<a href='../submit/code.php?id=77626' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=486" target="_blank">
+漂亮字串</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=145733' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=495" target="_blank">
+窗口</a>
+</td>
+<td>
+<a href='../submit/code.php?id=78669' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=502" target="_blank">
+长路上的灯</a>
+</td>
+<td>
+<a href='../submit/code.php?id=81300' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=510" target="_blank">
+分班</a>
+</td>
+<td>
+<a href='../submit/code.php?id=81406' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=515" target="_blank">
+象棋比赛</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=145667' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=516" target="_blank">
+求和</a>
+</td>
+<td>
+<a href='../submit/code.php?id=123835' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=520" target="_blank">
+关押罪犯</a>
+</td>
+<td>
+<a href='../submit/code.php?id=79470' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=561" target="_blank">
+迷宫</a>
+</td>
+<td>
+<a href='../submit/code.php?id=81500' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=572" target="_blank">
+失落的猴子</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=81762' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=620" target="_blank">
+铺地毯</a>
+</td>
+<td>
+<a href='../submit/code.php?id=134354' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=621" target="_blank">
+选择客栈</a>
+</td>
+<td>
+<a href='../submit/code.php?id=77678' target='_blank'>
+
+BODY: P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=623" target="_blank">
+数字反转</a>
+</td>
+<td>
+<a href='../submit/code.php?id=128833' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=625" target="_blank">
+瑞士轮</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=136625' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=631" target="_blank">
+聪明的质监员</a>
+</td>
+<td>
+<a href='../submit/code.php?id=81772' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=649" target="_blank">
+积木分发</a>
+</td>
+<td>
+<a href='../submit/code.php?id=146594' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=659" target="_blank">
+报表统计</a>
+</td>
+<td>
+<a href='../submit/code.php?id=252130' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=662" target="_blank">
+圆上的整点</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=152428' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=664" target="_blank">
+星际竞速</a>
+</td>
+<td>
+<a href='../submit/code.php?id=81882' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=675" target="_blank">
+贪婪的送礼者</a>
+</td>
+<td>
+<a href='../submit/code.php?id=91537' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=676" target="_blank">
+黑色星期五</a>
+</td>
+<td>
+<a href='../submit/code.php?id=192188' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=703" target="_blank">
+病毒</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=91546' target='_blank'>
+P<i class='icon-remove'></i>
+</a>
+<a href="../problem/problem.php?pid=724" target="_blank">
+立体分割</a>
+</td>
+<td>
+<a href='../submit/code.php?id=141563' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=775" target="_blank">
+山海经</a>
+</td>
+<td>
+<a href='../submit/code.php?id=145786' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=793" target="_blank">
+道路</a>
+</td>
+<td>
+<a href='../submit/code.php?id=145563' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=796" target="_blank">
+派遣</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=168844' target='_blank'>
++<i class='icon-remove'></i>
+</a>
+<a href="../problem/problem.php?pid=797" target="_blank">
+守卫</a>
+</td>
+<td>
+<a href='../submit/code.php?id=91683' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=800" target="_blank">
+棋盘上的距离</a>
+</td>
+<td>
+<a href='../submit/code.php?id=124675' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=831" target="_blank">
+最短网络</a>
+</td>
+<td>
+<a href='../submit/code.php?id=153117' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=834" target="_blank">
+形成的区域</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=77930' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=861" target="_blank">
+阶乘</a>
+</td>
+<td>
+<a href='../submit/code.php?id=140131' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=882" target="_blank">
+栅栏的木料</a>
+</td>
+<td>
+<a href='../submit/code.php?id=148239' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=885" target="_blank">
+草地排水</a>
+</td>
+<td>
+<a href='../submit/code.php?id=155452' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=902" target="_blank">
+乐曲主题</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=91662' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=922" target="_blank">
+我的天凤不可能这么简单</a>
+</td>
+<td>
+<a href='../submit/code.php?id=150060' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=930" target="_blank">
+找第k小的数</a>
+</td>
+<td>
+<a href='../submit/code.php?id=91691' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=932" target="_blank">
+单词缩写</a>
+</td>
+<td>
+<a href='../submit/code.php?id=91696' target='_blank'>
+P
+BODY: <i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=933" target="_blank">
+打乒乓球</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=91718' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=956" target="_blank">
+money</a>
+</td>
+<td>
+<a href='../submit/code.php?id=176227' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=963" target="_blank">
+随机数生成器</a>
+</td>
+<td>
+<a href='../submit/code.php?id=91577' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=972" target="_blank">
+陶陶摘苹果</a>
+</td>
+<td>
+<a href='../submit/code.php?id=91708' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=984" target="_blank">
+数字统计</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=140862' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1008" target="_blank">
+贪婪大陆</a>
+</td>
+<td>
+<a href='../submit/code.php?id=140373' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1055" target="_blank">
+道路游戏</a>
+</td>
+<td>
+<a href='../submit/code.php?id=80135' target='_blank'>
+P<i class='icon-remove'></i>
+</a>
+<a href="../problem/problem.php?pid=1066" target="_blank">
+增强的除法问题</a>
+</td>
+<td>
+<a href='../submit/code.php?id=77962' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pi
+BODY: d=1074" target="_blank">
+阶乘</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=121936' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1087" target="_blank">
+砝码称重</a>
+</td>
+<td>
+<a href='../submit/code.php?id=141192' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1104" target="_blank">
+冗余依赖</a>
+</td>
+<td>
+<a href='../submit/code.php?id=141220' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1107" target="_blank">
+售货员的难题</a>
+</td>
+<td>
+<a href='../submit/code.php?id=119952' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1108" target="_blank">
+关路灯</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=142165' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1133" target="_blank">
+黑白棋游戏</a>
+</td>
+<td>
+<a href='../submit/code.php?id=124477' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1151" target="_blank">
+活动选择</a>
+</td>
+<td>
+<a href='../submit/code.php?id=132409' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1160" target="_blank">
+旅行家的预算</a>
+</td>
+<td>
+<a href='../submit/code.php?id=158731' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1181" target="_blank">
+编辑距离</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=92129' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1184" target="_blank">
+苹果摘陶陶</a>
+</td>
+<td>
+<a href='../submit/code.php?id=141746' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1190" target="_blank">
+最大和</a>
+</td>
+<td>
+<a href='../submit/code.php?id=142827' target='_blank'>
++<i class='icon-remove'></i>
+</a>
+<a href="../problem/problem.php?pid=1196" target="_blank">
+小木棍</a>
+</td>
+<td>
+<a href='../submit/code.php?id=142569' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1212" target="_blank">
+奶牛排队</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=121724' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1254" target="_blank">
+最难的任务</a>
+</td>
+<td>
+<a href='../submit/code.php?id=121733' target='_blank'>
++<i class='icon-
+BODY: ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1255" target="_blank">
+三只小猪</a>
+</td>
+<td>
+<a href='../submit/code.php?id=133343' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1263" target="_blank">
+国王游戏</a>
+</td>
+<td>
+<a href='../submit/code.php?id=143358' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1265" target="_blank">
+同余方程</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=135865' target='_blank'>
++<i cl
+BODY: ass='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1266" target="_blank">
+借教室</a>
+</td>
+<td>
+<a href='../submit/code.php?id=199654' target='_blank'>
++<i class='icon-remove'></i>
+</a>
+<a href="../problem/problem.php?pid=1267" target="_blank">
+疫情控制</a>
+</td>
+<td>
+<a href='../submit/code.php?id=50507' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1268" target="_blank">
+质因数分解</a>
+</td>
+<td>
+<a href='../submit/code.php?id=121769' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1270" target="_blank">
+摆花</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=140820' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1272" target="_blank">
+行星序列</a>
+</td>
+<td>
+<a href='../submit/code.php?id=165069' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1277" target="_blank">
+数学作业</a>
+</td>
+<td>
+<a href='../submit/code.php?id=149453' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1282" target="_blank">
+数矩形</a>
+</td>
+<td>
+<a href='../submit/code.php?id=79268' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1299" target="_blank">
+bplusa</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=181206' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1313" target="_blank">
+下落的圆盘</a>
+</td>
+<td>
+<a href='../submit/code.php?id=146329' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1321" target="_blank">
+灾难</a>
+</td>
+<td>
+<a href='../submit/code.php?id=242456' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1322" target="_blank">
+网络</a>
+</td>
+<td>
+<a href='../submit/code.php?id=147058' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1341" target="_blank">
+永无乡</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=154692' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1345" target="_blank">
+K大数查询</a>
+</td>
+<td>
+<a href='../submit/code.php?id=124597' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1359" target="_blank">
+最长链</a>
+</td>
+<td>
+<a href='../submit/code.php?id=141976' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1365" target="_blank">
+软件安装</a>
+</td>
+<td>
+<a href='../submit/code.php?id=128578' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1373" target="_blank">
+道路修建</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=80820' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1398" target="_blank">
+最长上升子序列</a>
+</td>
+<td>
+<a href='../submit/code.php?id=124268' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1401" target="_blank">
+有限资源分配问题</a>
+</td>
+<td>
+<a href='../submit/code.php?id=91795' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1408" target="_blank">
+本题面可以覆盖1408</a>
+</td>
+<td>
+<a href='../submit/code.php?id=81649' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1413" target="_blank">
+级数求和</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=92517' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1415" target="_blank">
+数的计数</a>
+</td>
+<td>
+<a href='../submit/code.php?id=80858' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1417" target="_blank">
+最大公约数和最小公倍数问题</a>
+</td>
+<td>
+<a href='../submit/code.php?id=81645' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1433" target="_blank">
+圣庙里的汉诺塔</a>
+</td>
+<td>
+<a href='../submit/code.php?id=143178' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1435" target="_blank">
+金发姑娘和N头牛</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=81723' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1436" target="_blank">
+奶牛的锁</a>
+</td>
+<td>
+<a href='../submit/code.php?id=136002' target='
+BODY: _blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1439" target="_blank">
+货车运输</a>
+</td>
+<td>
+<a href='../submit/code.php?id=81922' target='_blank'>
+P<i class='icon-remove'></i>
+</a>
+<a href="../problem/problem.php?pid=1440" target="_blank">
+积木大赛</a>
+</td>
+<td>
+<a href='../submit/code.php?id=167634' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1444" target="_blank">
+车站分级</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=91684' target='_blank'>
+P<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1516" target="_blank">
+棋盘上的车</a>
+</td>
+<td>
+<a href='../submit/code.php?id=148137' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1545" target="_blank">
+机器排序</a>
+</td>
+<td>
+<a href='../submit/code.php?id=167680' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1550" target="_blank">
+参观洞穴</a>
+</td>
+<td>
+<a href='../submit/code.php?id=160861' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1581" target="_blank">
+消防站</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=159292' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1583" target="_blank">
+树的维护</a>
+</td>
+<td>
+<a href='../submit/code.php?id=172932' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1584" target="_blank">
+挂缀</a>
+</td>
+<td>
+<a href='../submit/code.php?id=134716' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1588" target="_blank">
+距离咨询</a>
+</td>
+<td>
+<a href='../submit/code.php?id=152305' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1594" target="_blank">
+二逼平衡树</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=244469' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1608" target="_blank">
+转置更好玩</a>
+</td>
+<td>
+<a href='../submit/code.php?id=153105' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1682" target="_blank">
+贴海报</a>
+</td>
+<td>
+<a href='../submit/code.php?id=169595' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1688" target="_blank">
+树的统计Count</a>
+</td>
+<td>
+<a href='../submit/code.php?id=155590' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1689" target="_blank">
+Bounce 弹飞绵羊</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=165239' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1714" target="_blank">
+树上的点对</a>
+</td>
+<td>
+<a href='../submit/code.php?id=153476' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1715" target="_blank">
+动态逆序对</a>
+</td>
+<td>
+<a href='../submit/code.php?id=159571' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1722" target="_blank">
+奶牛浴场</a>
+</td>
+<td>
+<a href='../submit/code.php?id=185318' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1759" target="_blank">
+和与积</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=
+BODY: 140077' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1805" target="_blank">
+飞扬的小鸟</a>
+</td>
+<td>
+<a href='../submit/code.php?id=140088' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1808" target="_blank">
+解方程</a>
+</td>
+<td>
+<a href='../submit/code.php?id=158864' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1812" target="_blank">
+子矩阵</a>
+</td>
+<td>
+<a href='../submit/code.php?id=178332' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1822" target="_blank">
+作业</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=146162' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1829" target="_blank">
+普通平衡树</a>
+</td>
+<td>
+<a href='../submit/code.php?id=164768' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1854" target="_blank">
+最小生成树计数</a>
+</td>
+<td>
+<a href='../submit/code.php?id=160493' target='_blank
+BODY: '>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1855" target="_blank">
+魔兽地图DotR</a>
+</td>
+<td>
+<a href='../submit/code.php?id=145098' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1862" target="_blank">
+种树</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=144405' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1893" target="_blank">
+等差子序列</a>
+</td>
+<td>
+<a href='../submit/code.php?id=155525' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1901" target="_blank">
+数颜色</a>
+</td>
+<td>
+<a href='../submit/code.php?id=150205' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1912" target="_blank">
+千石抚子的三维积木</a>
+</td>
+<td>
+<a href='../submit/code.php?id=157534' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1927" target="_blank">
+牛的路线2</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=157490' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1928" target="_blank">
+所有进制</a>
+</td>
+<td>
+<a href='../submit/code.php?id=240688' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1934" target="_blank">
+选数</a>
+</td>
+<td>
+<a href='../submit/code.php?id=203212' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem
+BODY: .php?pid=1959" target="_blank">
+落忆枫音</a>
+</td>
+<td>
+<a href='../submit/code.php?id=173906' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=1962" target="_blank">
+树上染色</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=178160' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=2018" target="_blank">
+程序自动分析</a>
+</td>
+<td>
+<a href='../submit/code.php?id=178162' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=2019" target="_blank">
+软件包管理器</a>
+</td>
+<td>
+<a href='../submit/code.php?id=178168' target='_blank'>
++<i class='icon-remove'></i>
+</a>
+<a href="../problem/problem.php?pid=2020" target="_blank">
+寿司晚宴</a>
+</td>
+<td>
+<a href='../submit/code.php?id=178851' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=2021" target="_blank">
+荷马史诗</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=178855' target='_blank'>
++<i class='icon-remove'></i>
+</a>
+<a href="../problem/problem.php?pid=2022" target="_blank">
+品酒大会</a>
+</td>
+<td>
+<a href='../submit/code.php?id=183253' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=2029" target="_blank">
+简单题</a>
+</td>
+<td>
+<a href='../submit/code.php?id=195236' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=2056" target="_blank">
+无平方因子数</a>
+</td>
+<td>
+<a href='../submit/code.php?id=200257' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=2071" target="_blank">
+复制&粘贴</a>
+</td>
+<tr><td>
+<a href='../submit/code.php?id=200267' target='_blank'>
++<i class='icon-remove'></i>
+</a>
+<a href="../problem/problem.php?pid=2072" target="_blank">
+愉快的logo设计</a>
+</td>
+<td>
+<a href='../submit/code.php?id=208134' target='_blank'>
++<i class='icon-ok'></i>
+</a>
+<a href="../problem/problem.php?pid=2106" target="_blank">
+斗地主</a>
+</td>
+<td><td></table>
+<p class='alert'>
+通过了<b>205</b>道题，一共提交了<b>1120</b>次，通过率为<b>18.30%</b>。
+</p>
+</div>
+</div>
+</div>
+
+
+
+
+<div class='footer'>
+<div class='btn-group buttons-radio pull-right'>
+<a class='btn btn-small' onclick="document.getElementById('trad').innerHTML='中文正體';document.getElementById('alltext').innerHTML = TradSimp.getTrad(document.getElementById('alltext').innerHTML);" id="trad">中文繁體</a>
+<a class='btn btn-small' onclick="document.getElementById('trad').innerHTML='中文繁體';document.getElementById('alltext').innerHTML = TradSimp.getSimp(document.getElementById('alltext').innerHTML);" id="simp">中文简体</a>
+</div>
+<p>
+<span class='tou'>2016-04-22 16:54:38</span>
+以 <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a> 作为界面框架，应用 <a href="/Bootstrap/css/bootstrap.min.css" target="_blank">bootstrap</a> 主题。
+进程运行 0.0656 s ，处理完成数据库 7 次。</p>
+(<script src="http://s25.cnzz.com/stat.php?id=4592348&web_id=4592348" language="JavaScript"></script>)由 <a href="https://github.com/kingfree/cogs" target="_blank">CmYkRgB123 在线评测系统</a> 强力驱动，版本 2.8.2.1 ，由 <a href="http://weibo.com/kingfree" target="_blank">王者自由</a> 二次开发。原作者 &copy; <a href="http://www.byvoid.com" target="_blank">BYVoid</a>，保留部分权利。
+</p>
+</div>
+</div>
+</body>
+</html>
+
+<script>
+$(document).ready(function() {
+  $('#fenleito').click(fenlei);
+  $('#chbar').click(chbar);
+});
+function fenlei() {
+    $('#fenlei').slideToggle();
+};
+function chbar() {
+    if($('#rightbar').hasClass('span8')) {
+      $('#leftbar').hide();
+      $('#rightbar').removeClass('span8');
+      $('#chbaricon').removeClass('icon-indent-left');
+      $('#chbaricon').addClass('icon-align-left');
+      $('#chbar').attr('title', '显示左边栏');
+    } else {
+      $('#leftbar').show();
+      $('#rightbar').addClass('span8');
+      $('#chbaricon').removeClass('icon-align-left');
+      $('#chbaricon').addClass('icon-indent-left');
+      $('#chbar').attr('title', '隐藏左边栏');
+    }
+  };
+function pagedown() {
+  $('body').animate({scrollTop:$('body').scrollTop()+400});
+};
+function pageup() {
+  $('body').animate({scrollTop:$('body').scrollTop()-400});
+};
+//快捷键操作
+$(document).keydown(function(key) {
+    //alert(key.which);
+    if(key.which == 72) // h
+      chbar();
+    else if(key.which == 74) // j
+      pagedown();
+    else if(key.which == 75) // k
+      pageup();
+    else if(key.which == 84) // t
+      fenlei();
+    else if(key.which == 82) // r
+      $('#addfenlei').click();
+    else if(key.which == 65) // a
+      $('#source').click();
+    else if(key.ctrlKey && key.which == 13) // Ctrl + Enter
+      $('#tijiao').submit();
+    else if(key.which == 13) // Enter
+      $('#addcate form').submit();
+    else if(key.which == 80) // p
+      $('#pas').attr('checked', true);
+    else if(key.which == 67) // c
+      $('#c').attr('checked', true);
+    else if(key.which == 187) // +
+      $('#cpp').attr('checked', true);
+    else if(key.which == 85) // u
+      $('#testmode').attr('checked', !$('#testmode').attr('checked'));
+    else if(key.which == 27) // Esc
+      $('.modal').modal('hide');
+});
+</script>
+
+
+
